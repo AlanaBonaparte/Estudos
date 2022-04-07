@@ -1,0 +1,68 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function sorteia(n) {
+
+        var resposta = Math.round(Math.random()*n)
+        return resposta
+
+    }
+
+    var limite = parseInt(prompt("Vamos adivinha de 0 até quanto?"))
+    pulaLinha();
+
+    var numeroSorteado = sorteia(limite)
+    console.log(numeroSorteado)
+
+
+    var chute = parseInt(prompt("Chute um número de 0 a " + limite + "!"))
+    pulaLinha();
+
+    tentar();
+
+    function tentar() {
+
+        if (chute == numeroSorteado ) {
+
+            mostra("Parabéns! Você acertou!");
+
+        }
+        else{
+
+            if(chute < numeroSorteado && chute >= 0){
+
+                chute = parseInt(prompt("Tente um número maior!"));
+                pulaLinha();
+            }
+
+            if(chute > numeroSorteado && chute <= limite){
+
+                chute = parseInt(prompt("Tente um número menor!"));
+                pulaLinha();
+            }
+
+            else {
+
+            chute = parseInt (prompt("Digite um número entre 0 e " + limite + "!"));
+            pulaLinha();
+
+            }
+
+            tentar();
+        }
+    }
+
+</script>

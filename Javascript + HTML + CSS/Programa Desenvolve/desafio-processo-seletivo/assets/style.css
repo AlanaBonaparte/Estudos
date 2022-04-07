@@ -1,0 +1,386 @@
+/* CSS base */
+
+ :root {
+    --fontTexto: 'Montserrat', sans-serif;
+    --fontTitulo: 'Raleway', sans-serif;
+    --fundoLogo: #132235;
+    --branco: #F2F2F2;
+    --azulEscuro: #2A5559;
+    --letraLogo: #6ddad3;
+    --azulClaro: #468C8C;
+}
+
+body {
+    font-family: var(--fontTexto);
+    font-size: 17px;
+}
+
+main {
+    padding: 0 5% 1rem 5%;
+    background-color: var(--branco);
+    background-image: url(../assets/bg1-main.jpg);
+    background-repeat: repeat;
+    background-size: 30%;
+}
+
+.titulo {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--fundoLogo);
+}
+
+
+/* cabeçalho */
+
+.cabecalho {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--fundoLogo);
+    margin: 0, auto;
+    position: relative;
+    height: 201px;
+}
+
+.cabecalho_logo {
+    display: block;
+    margin-left: 5%;
+    overflow: hidden;
+    height: 170px;
+    width: 500px;
+}
+
+.cabecalho_logo img {
+    height: 500px;
+    width: 500px;
+    margin-top: -160px;
+}
+
+.cabecalho_nav {
+    position: absolute;
+    display: block;
+    margin-left: 57%;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 1.5rem;
+}
+
+.cabecalho_list {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.cabecalho_list:hover {
+    color: var(--letraLogo);
+    text-decoration: underline;
+    font-size: 140%;
+}
+
+
+/* quem somos */
+
+.quem_somos {
+    padding: 2rem 0;
+    width: 950px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    height: 12rem;
+}
+
+.imagem_casa {
+    width: 200px;
+    float: left;
+    margin: 0 3rem 0 0;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 5px 5px 5px 0px #000000;
+}
+
+.imagem_casa:hover {
+    opacity: 0.5;
+}
+
+.descricao_quem_somos {
+    text-align: justify;
+}
+
+
+/* diferenciais */
+
+.diferenciais {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.diferenciais_lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.diferenciais_item {
+    max-width: 350px;
+    box-sizing: border-box;
+    padding: 0.5rem 0 2rem 5rem;
+    background-size: 2.3rem;
+    background-repeat: no-repeat;
+    background-position: top left 2.25rem;
+}
+
+.diferenciais__item--tempo {
+    background-image: url(../assets/tempo.png);
+}
+
+.diferenciais__item--personalizacao {
+    background-image: url(../assets/personalizacao.png);
+}
+
+.diferenciais__item--especialistas {
+    background-image: url(../assets/especialista.png);
+}
+
+.item_titulo {
+    color: var(--fundoLogo);
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.item_texto {
+    line-height: normal;
+    text-align: left;
+    padding-right: 1rem;
+}
+
+.video {
+    align-self: flex-end;
+    display: flex;
+    align-self: auto;
+    width: 60%;
+    border: 4px solid #707070;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px #909090;
+}
+
+
+/* localização */
+
+#localização {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: left;
+    width: 100%;
+}
+
+.endereco_contato {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.localizacao_subtitulo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    margin-top: 5rem;
+    color: var(--fundoLogo);
+}
+
+.localizacao_endereco {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 1em;
+}
+
+.localizacao_contato {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-top: 2rem;
+    color: var(--fundoLogo)
+}
+
+.contato_telefone {
+    line-height: normal;
+    text-decoration: none;
+    color: var(--fundoLogo);
+    text-decoration: underline;
+}
+
+.contato_mail {
+    line-height: normal;
+    text-decoration: none;
+    color: var(--fundoLogo);
+    text-decoration: underline;
+}
+
+.localizacao_mapa {
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+
+
+/* Contato */
+
+.contato {
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    font-size: 16px;
+    background-color: #FEFEFE;
+    font-weight: 300;
+    line-height: 1.44em;
+    border-radius: 10px;
+    padding: 25px 40px;
+    box-shadow: rgb(0 0 0 / 56%) 0 0 10px;
+    margin: 7em 30% 4em 30%;
+}
+
+.subtitulo_contato {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: var(--azulEscuro);
+}
+
+form label {
+    display: block;
+    margin: 0;
+    font-size: 1rem;
+    color: var(--azulEscuro);
+    font-weight: bold;
+    margin-top: 0.7rem;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 auto 1rem;
+    padding: 12px 24px;
+    width: 90%;
+    font-size: 14px;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--azulEscuro);
+}
+
+.radio {
+    margin-top: 2px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.preferencia_contato {
+    margin-bottom: 1rem;
+}
+
+.enviar {
+    width: 102%;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--fundoLogo);
+    padding: 10px 0;
+    color: #ffffff;
+    font-weight: bold;
+    transition: 1s all;
+    cursor: pointer;
+    margin: 1rem 0 0 0;
+    display: block;
+}
+
+.enviar:hover {
+    background-color: var(--azulClaro);
+}
+
+.resposta_envio {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 1rem auto;
+    color: var(--azulClaro);
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+
+/* Rodape */
+
+.rodape_container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    background-color: var(--letraLogo);
+    position: relative;
+    padding: 0 10%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: url(../assets/bg2-2.png);
+    background-repeat: repeat;
+    background-size: 30%;
+}
+
+.mapa_site {
+    display: block;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+
+.rodape_link {
+    display: flex;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--fundoLogo);
+    font-size: 1.2rem;
+    margin: 0.7rem 0;
+}
+
+.rodape_link:hover {
+    color: var(--fundoLogo);
+    text-decoration: underline;
+}
+
+.rodape_logo {
+    display: block;
+    margin: 5rem;
+}
+
+.rodape_social {
+    display: inline-flex;
+    width: 5rem;
+}
+
+.rodape_midia {
+    margin: 1rem;
+    padding: auto;
+}
+
+.copyright {
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--fundoLogo);
+    margin: 1rem 0;
+}

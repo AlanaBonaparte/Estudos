@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <title>F4 Life</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <div class="cabecalho_logo">
+                <img src="assets/f4life.png" class="logo" alt="Logo da F4 Life" />
+            </div>
+            <nav class="cabecalho_nav">
+                <ul>
+                    <li><a class="cabecalho_list" href="#quem_somos">Quem Somos</a></li>
+                    <li><a class="cabecalho_list" href="#diferenciais">Diferenciais</a></li>
+                    <li><a class="cabecalho_list" href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="quem_somos" id="quem_somos">
+            <h1 class="titulo titulo_quem_somos">Quem somos</h1>
+            <img src="assets/business-man-hand-hold-the-house-model-saving-small-house.jpg" class="imagem_casa" alt="Homem com maquete de casa." />
+            <p class="descricao_quem_somos">F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias. Similar aos modelos de Quinto Andar e Loft, a empresa realiza reformas e prepara moradias para recepção de pessoas universitárias em um ambiente específico e otimizado
+                para a vida de graduação.
+            </p>
+        </section>
+
+        <section class="diferenciais" id="diferenciais">
+
+            <ul class="diferenciais_lista">
+
+                <li class="diferenciais_item diferenciais__item--tempo">
+                    <h2 class="item_titulo">Tempo</h2>
+                    <p class="item_texto">Tempo é importante! Trabalhamos em ritmo acelerado, atendendo rigorosamente aos prazos.</p>
+                </li>
+
+                <li class="diferenciais_item diferenciais__item--personalizacao">
+                    <h2 class="item_titulo">Personalização</h2>
+                    <p class="item_texto">Focamos no cliente! Oferecemos serviços personalizados de acordo com a sua rotina e preferência.</p>
+                </li>
+
+                <li class="diferenciais_item diferenciais__item--especialistas">
+                    <h2 class="item_titulo">Especialistas</h2>
+                    <p class="item_texto">Equipe experiente e especializada! Priorizamos a qualidade e a segurança atreladas ao conforto e estética.</p>
+                </li>
+
+            </ul>
+            <div class="video">
+
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/IxkKxbu5Rxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+            </div>
+        </section>
+
+        <section class="localizacao" id="localizacao">
+            <h2 class="subtitulo localizacao_subtitulo">Localização</h2>
+            <div class="localizacao_mapa_endereco">
+                <div class="localizacao_mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24596.30683855903!2d-46.646303914608175!3d-23.59490306425104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum%20-%20Escola%20de%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1645044652810!5m2!1spt-BR!2sbr"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+                <address class="localizacao_endereco">
+                  Rua Fictícia, 123</br>
+                  Centro, São Paulo
+                  <article class="localizacao_contato">
+                      <p>
+                          <a href="tel:+552700000000" class="contato_telefone">(11) 98765-4321</a>
+                          ou
+                          <a href="mailto:contato@f4life.com" class="contato_mail">contato@f4life.com</a>                        
+                      </p>
+                  </article>
+                </address>
+            </div>
+
+        </section>
+
+        <section class="contato" id="contato">
+            <h2 class="subtitulo_contato">Fale Conosco</h2>
+            <form>
+
+                <label for="nome">Nome</label>
+                <input class="input-padrao" type="text" id="nome" required>
+
+                <label for="email">Email</label>
+                <input class="input-padrao" type="email" id="email" required placeholder="Usuário@domínio.com">
+
+                <label for="telefone">Telefone</label>
+                <input class="input-padrao" type="tel" id="telefone" required placeholder="(xx)xxxxx-xxxx">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
+
+                <fieldset>
+
+
+                    <legend>Como prefere o nosso contato?</legend>
+                    <div class="preferencia_contato">
+                        <label for="radio_email" class="radio"><input type="radio" name="contato" value="email" id = "radio-email">Email</label>
+
+
+                        <label for="radio_telefone" class="radio"><input type="radio" name="contato" value="telefone" id = "radio-telefone">Telefone</label>
+
+
+                        <label for="radio_whatsapp" class="radio"><input type="radio" name="contato" value="whatsapp" id = "radio-whatsapp" checked>Whatsapp</label>
+
+                    </div>
+                    <input type="button" value="Enviar" class="enviar">
+                    <h2 class="resposta_envio" id="resposta_envio"></h2>
+
+                </fieldset>
+
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="rodape_container">
+            <section class="mapa_site">
+                <nav>
+                    <ul class="rodape_navegacao">
+                        <li>
+                            <a href="#quem_somos" class="rodape_link">Quem Somos</a></li>
+                        <li>
+                            <a href="#diferenciais" class="rodape_link">Diferenciais</a></li>
+                        <li>
+                            <a href="#localizacao" class="rodape_link">Localização</a></li>
+                        <li>
+                            <a href="#contato" class="rodape_link">Fale Conosco</a></li>
+
+                    </ul>
+
+                </nav>
+            </section>
+            <img src="assets/f4life.png" alt="Logo da F4 Life" class="rodape_logo">
+            <div class="sociais_copyright">
+                <section class="rodape-midias-sociais">
+                    <ul class="rodape_social">
+                        <li>
+                            <a target="_blank" rel="noopeneer noreferrer" href="https://www.facebook.com/" class="rodape_midia">
+                                <img width="50" height="50" src="assets/facebook.png" alt="Ícone do Facebook">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a target="_blank" rel="noopeneer noreferrer" href="https://twitter.com/" class="rodape_midia">
+                                <img width="50" height="50" src="assets/twitter.png" alt="Ícone do Twitter">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a target="_blank" rel="noopeneer noreferrer" href="https://www.instagram.com/" class="rodape_midia">
+                                <img width="50" height="50" src="assets/instagram.png " alt="Ícone do instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+
+                <p class="copyright">&copy; Copyright F4 Life - 2022 </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/main.js"></script>
+</body>
+
+</html>
